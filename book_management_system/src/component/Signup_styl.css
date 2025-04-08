@@ -1,0 +1,71 @@
+.signup_body{
+    background-image: url('../component/Assets/download\ \(5\).jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    width: 50%;
+    height: 95%; 
+    justify-content: center;/* translucent white */
+    backdrop-filter: blur(10px); /* blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.card-title{
+    color: rgb(44, 26, 2);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size:40PX;
+  }
+
+  .card-text{
+    color: rgb(50, 29, 2);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: larger;
+  }
+
+  label{
+    color: rgb(19, 11, 1);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size:medium;
+  }
+
+  .login-btn{
+    background-color: rgb(44, 26, 2);
+    color: antiquewhite;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(44, 26, 2);
+    border-radius: 10px;
+}
+.login-btn:hover{
+  background-color: transparent;
+  color: rgb(236, 204, 161);
+  border-color: antiquewhite;
+    transition: 0.5s;
+}
+
+.signup-btn{
+    background-color: rgb(44, 26, 2);
+    color: antiquewhite;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(44, 26, 2);
+    border-radius: 10px;
+}
+
+.signup-btn:hover{
+    background-color: transparent;
+    color: rgb(236, 204, 161);
+    border-color: antiquewhite;
+    transition: 0.5s;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom"
+import'../component/Login_Style.css'
 
 
 
@@ -23,22 +24,34 @@ function Login() {
          // Redirect to dashboard after login (Change as needed)
       };
   return (
-    <div>
-    <h2>Login Page</h2>
-    <p>Welcome back! Please log in.</p>
+    <div className='container-fluid login_body d-flex justify-content-center align-items-center vh-100'>
+' 
+      <div className='card glass-card text-white p-4' style={{maxWidth:'500px',width:'100%'}} >
+    <h2 className='card-title text-center'>Login Page</h2>
+    <p className='card-text text-center'>Welcome back! Please log in.</p>
+
     <form onSubmit={handleSubmit}>
-        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required/>
-        <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required/>
-        <button onClick={() => navigate("/")}>Login</button>
+      <div className='mb-3'>
+        <label htmlFor="">E-Mail </label><br />
+        <input type="email" className='form-control bg-transparent'  name="email" placeholder="Email" value={formData.email} onChange={handleChange} required/>
+        </div>
+
+        <div className='mb-3'>
+        <label htmlFor="">Password </label><br />
+        <input type="password" className='form-control bg-transparent' name="password" placeholder="Password" value={formData.password} onChange={handleChange} required/>
+        </div>
+
+        <button className='login-btn' onClick={() => navigate("/")}>Login</button>
       </form>
 
       
-      Don't have an account? 
-      <button onClick={() => navigate("/signup")}>Signup</button>
+      <p className=' text-black'>Don't have an account? </p>
+      <button className='signup-btn' onClick={() => navigate("/signup")}>Signup</button>
 
     
     
-    
+      </div>
+
   </div>
   )
 }
