@@ -31,7 +31,7 @@ function Login() {
     <p className='card-text text-center'>Welcome back! Please log in.</p>
 
     <form onSubmit={handleSubmit}>
-      <div className='mb-3'>
+      <div className='form-group mb-3'>
         <label htmlFor="">E-Mail </label><br />
         <input type="email" className='form-control bg-transparent'  name="email" placeholder="Email" value={formData.email} onChange={handleChange} required/>
         </div>
